@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <script>
+        let obj={}
+        obj.x=10
+        obj.y=12
+        obj.show=function(){
+            console.log(`x=${this.x}`)
+            console.log(`y=${this.y}`)
+        }
+        console.log(obj)
+console.log(typeof obj)
+obj.show()
+let person={name:"arun",age:12,display:function(){
+    console.log(`name ${this.name}`)
+}}
+console.log(person)
+person.display()
+        
+       
+    </script>
+    </body>
+</html>

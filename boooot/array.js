@@ -1,0 +1,20 @@
+let arr1=[]
+let arr2=new Array()
+console.log(arr1)
+console.log(arr2,typeof arr2)
+let arr3=[100,200,300,500]
+console.log(arr3)
+arr3.push(100)
+console.log(arr3)
+arr3.pop(100)
+console.log(arr3)
+arr3.shift(200)
+    console.log(arr3)
+    arr3.unshift(90)
+console.log(arr3)
+arr3[3]=400
+console.log(arr3)
+arr3.splice(2)
+console.log(arr3)
+arr3.splice(4,1)
+console.log(arr3)

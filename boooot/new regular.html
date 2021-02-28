@@ -1,0 +1,12 @@
+<html>
+    <body>
+        <script> 
+        function check(){
+            let regex=/^[a-z]{3}\d{2}$/
+            let data=document.getElementById("data").value     
+        alert(data.match(regex))   }
+        </script>
+        <input type="text" id="data">
+        <button onclick="check()">click</button>
+    </body>
+</html>

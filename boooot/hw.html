@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <textarea id="content" name="" cols="30" rows="10">
+  </textarea><input type="text" id="word">
+  <button onclick="show()">click me</button>
+  <p id=newcontent></p>
+  <script>
+      function show(){
+          let word=document.getElementById("word").value
+        let content= document.getElementById("content").value
+ let regex=new RegExp(word,"g")
+ let s=content.replace(regex,"<span style='background-color:yellow'>"+word+"</span>")
+        document.getElementById("newcontent").innerHTML=s
+        console.log(word)
+        console.log(content)
+      }
+  </script>
+    </body>
+</html>

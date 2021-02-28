@@ -1,0 +1,71 @@
+<html>
+    <body>
+        <ul id="mylist"></ul>
+        <script>
+            let names=["anna","annie","racaeh","aami","athi","aashi","aaru"]
+            console.log(names.slice(2,5))
+            console.table(names)
+            for(element of names){
+                console.log(element)
+
+            }
+            console.log("bhbhbnn")
+            for(index in names){
+                console.log(index)
+                console.log(names[index])
+            }
+            console.log("*******using for each fn*****")
+            names.forEach((name)=>{
+                console.log(name)
+            })
+
+           newary= names.map((name)=>{
+                return name.concat("*")
+
+            })
+            console.log(newary)
+           newary1= names.filter((name)=>{
+                if(name.startsWith("r")){
+                    return name
+                }
+            })
+            console.log(newary1)
+            let num_ary=[9,11,10,4,7,8]
+            let newarr3=num_ary.map((x)=>{
+                return x**2
+            })
+
+            console.log(newarr3)
+            let res=num_ary.reduceRight((x,y)=>{
+                return x+y
+            })
+            console.log(res)
+            let result=num_ary.reduce((x,y)=>{
+                console.log("x",x)
+                console.log("y",y)
+                return x+y
+            })
+            console.log(result)
+            num_ary.sort()
+            console.log(num_ary)
+            num_ary.reverse()
+            console.log(num_ary)
+            let array=["hello","gdmrng","gd"]
+            for (x of array){
+                let li=document.createElement("li")
+               li.inner.Text=x
+               document.getElementById("mylist").appendChild(li)
+            }
+            
+            console.log(element)
+
+
+
+
+            
+
+            
+        
+        </script>
+    </body>
+</html>

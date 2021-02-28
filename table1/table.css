@@ -1,0 +1,15 @@
+.tbl{
+    border-collapse: :collapse;
+}
+.theader{
+     background-color: blue;
+}
+.theader:hover{
+    background-color: chocolate;
+}
+.rowcls:hover{
+    background-color: darkgray;
+}
+.rowcls{
+    background-color: darkorange;
+}

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            let person={name:"ram",age:12}
+            let student=Object.create(person)
+            console.log(student)
+            student["roll no"]=1
+            console.log(student.name)
+            student.__proto__name="raj"
+            console.log(student)
+            console.log(student.name)
+            Object.freeze(student)
+            student.batch="ece"
+            student.rollno=69
+            Object.seal(student)
+            
+            console.log(Object.isSealed(student))
+            
+        </script>
+    </body>
+</html>
